@@ -21,6 +21,7 @@
     6.GET参数通过Url传递，POST放在Request body中。
 # 2.HTTP状态码
 服务端送回的响应报文里包含了状态码和原因短语
+
 | 状态码 | 类别 | 原因短语 |
 | --- | --- | --- |
 | 1XX | Informational（信息性状态码） | 接收的请求正在处理 |
@@ -30,6 +31,7 @@
 | 5XX | Server Error（服务器错误状态码） | 服务器处理请求出错 |
 
 详细状态码
+
 | 200 OK | 204 No Content | 206 Partial Content |
 | --- | --- | --- |
 | 301 Moved Permanently | 302 Found |
