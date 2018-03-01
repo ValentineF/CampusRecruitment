@@ -37,6 +37,9 @@
 | 400 Bad Request | 401 Unauthorized| 403 Forbidden | 404 Not Found |
 | 500 Internal Server Error | 503 Service Unavilable |
 # 3.请求报文和响应报文
+请求报文
+![请求报文](https://github.com/ValentineF/CampusRecruitment/blob/master/Picture/%E8%AF%B7%E6%B1%82%E6%8A%A5%E6%96%87.jpg?raw=true)
+![响应报文](https://github.com/ValentineF/CampusRecruitment/blob/master/Picture/%E5%93%8D%E5%BA%94%E6%8A%A5%E6%96%87.jpg?raw=true)
 # 4.HTTP首部（头）
 分四种:通用首部字段、请求首部字段、响应首部字段、实体首部字段。
 以通用首部字段为例
