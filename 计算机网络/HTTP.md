@@ -1,7 +1,7 @@
 # 0.HTTP方法
 | 方法 | 作用 | 详细 |
 | --- | --- | --- |
-| GET |获取资源| 安全性查，在URL中明文传输 |
+| GET |获取资源| 安全性差，在URL中明文传输 |
 | POST |传输实体主体| 告诉服务端信息，用于提交或修改|
 | HEAD |获取报文首部|确认URL的有效性及资源更新的时间|
 | PUT |上传文件|无验证机制，不安全|
@@ -70,10 +70,14 @@ Expires 字段可以用于告知缓存服务器该资源什么时候会过期。
 # 5.Cookie/Session
     0.由于Http是无状态的，所以引进了Cookie来保存信息
     1.Cookie（客户端）：
-        服务器发送的响应报文包含 Set-Cookie 字段，客户端得到响应报文后把 Cookie 内容保存到浏览器中。下次再发送请求时，从浏览器中读出 Cookie 值，在请求报文中包含 Cookie 字段，这样服务器就知道客户端的状态信息了。Cookie 状态信息保存在客户端浏览器中，而不是服务器上。
+        服务器发送的响应报文包含 Set-Cookie 字段，客户端得到响应报文后把 Cookie 内容保存到浏览器中。
+        下次再发送请求时，从浏览器中读出 Cookie 值，在请求报文中包含 Cookie 字段，这样服务器就知道客户端的状态信息了。
+        Cookie 状态信息保存在客户端浏览器中，而不是服务器上。
     2.Session（服务端）:
-        Session 是服务器用来跟踪用户的一种手段，每个 Session 都有一个唯一标识：Session ID。当服务器创建了一个Session时，给客户端发送的响应报文就包含了 Set-Cookie字段，其中有一个名为sid的键值对，这个键值对就是Session ID。
-        客户端收到后就把 Cookie 保存在浏览器中，并且之后发送的请求报文都包含 Session ID。HTTP 就是通过 Session 和 Cookie 这两种方式一起合作来实现跟踪用户状态的，Session 用于服务器端，Cookie 用于客户端。
+        Session 是服务器用来跟踪用户的一种手段，每个 Session 都有一个唯一标识：Session ID。
+        当服务器创建了一个Session时，给客户端发送的响应报文就包含了 Set-Cookie字段，其中有一个名为sid的键值对，这个键值对就是Session ID。
+        客户端收到后就把 Cookie 保存在浏览器中，并且之后发送的请求报文都包含 Session ID。
+        HTTP 就是通过 Session 和 Cookie 这两种方式一起合作来实现跟踪用户状态的，Session 用于服务器端，Cookie 用于客户端。
 # 6.HTTPS
     1.HTPP的安全问题：
         A.通信使用明文，内容可能会被窃听；
