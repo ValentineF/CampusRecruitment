@@ -155,7 +155,7 @@
         - 粒度大
         - 容易产生死锁（一个线程一直持有锁）
 - Concurrent包中的Lock框架
-![结构](..\picture\lock框架.png)
+![lock框架](https://github.com/ValentineF/NoteBook/blob/master/Picture/lock%E6%A1%86%E6%9E%B6.png?raw=true)
     ```
     public interface Lock {
         //加锁，如果锁已被其他线程获取，则进行等待
@@ -245,7 +245,7 @@
         }
         ```
 ## 线程状态及转换
-![线程状态及转换](..\picture\线程状态.jpg)
+![线程状态及转换图](https://github.com/ValentineF/NoteBook/blob/master/Picture/%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81.jpg?raw=true)
 
     1. Object.wait()
         让当前线程处于WAITING(放弃锁),前提是当前线程必须拥有此对象的monitor（即锁）,

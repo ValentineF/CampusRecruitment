@@ -23,7 +23,7 @@
 3. 任务接口（Task）：每个任务必须实现的接口，以供工作线程调度任务的执行，它主要规定了任务的入口，任务执行完后的收尾工作，任务的执行状态等；
 4. 任务队列（taskQueue）：用于存放没有处理的任务。提供一种缓冲机制。
 ## 线程池框架结构
-![](.\线程池框架.png)
+![线程池框架](https://github.com/ValentineF/NoteBook/blob/master/Picture/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E6%A1%86%E6%9E%B6.png?raw=true)
 一般还是利用Executors的静态方法来创建线程池
 ## 线程池的创建解析
 ```
@@ -57,7 +57,7 @@ new ThreadPoolExecutor(corePoolSize, maximumPoolSize,keepAliveTime, milliseconds
 ## 线程池工作流程
 提交一个线程进入线程池使用的是execute();submit()方法的本质也是调用execute()
 
-![工作流程](Java线程池主要工作流程.jpg)
+![提交任务工作流程](https://github.com/ValentineF/NoteBook/blob/master/Picture/Java%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%BB%E8%A6%81%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B.jpg?raw=true)
 ## 线程池状态
 ```
 volatile int runState;
