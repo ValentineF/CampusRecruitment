@@ -3,7 +3,7 @@
 ## Stream的作用
 
 - 由于对于集合进行操作的需求越发增多，一般会使用循环遍历的方式来对集合元素进行操作，比较笨拙且低效.
-- Stream是一种辅助集合操作的工具，针对集合的数据元素进行操作，本身并不存储数据，使用简洁且支持并发访问
+- Stream是一种辅助集合操作的工具，针对集合的数据元素进行操作，本身并不存储数据，使用简洁且支持并发访问
 - 流和它的名字一样，是顺序执行的操作，数据只能遍历一次
 
 ## 流的构造
@@ -36,7 +36,7 @@ String str = stream.collect(Collectors.joining()).toString();
 
 ### filter
 
-过滤出符合条件的元素，生成一个新的Stream
+过滤出符合条件的元素，生成一个新的Stream
 
 ```java
 Stream<T> filter(Predicate<? super T> predicate);
@@ -75,7 +75,7 @@ flatMap((childList) -> childList.stream());
 
 ```
 
-- 其他的mapToInt、mapToLong、mapToDouble只是更方便的转换为指定类型的流
+- 其他的mapToInt、mapToLong、mapToDouble只是更方便的转换为指定类型的流
 
 ```java
  IntStream mapToInt(ToIntFunction<? super T> mapper);
