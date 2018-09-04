@@ -36,7 +36,7 @@ Servlet本身不处理任何请求，比如servlet不会去监听特定的请求
 5. servlet初始化完成，Tomcat调用servlet的service()方法来处理本次请求，返回response
 6. 在servlet的生命周期中，Tomcat能监听并保存servlet的状态，并且允许其他servlet获取这些信息。这些信息将会被持久化保存，session或者其他上下文组件会利用这些信息，做特定的操作。例如购物车。
 7. Tomcat调用servlet的destroy()方法，销毁servlet。
-8. ![Servlet的请求过程](../picture/servlet.jpg)
+8. ![Servlet的请求过程](https://github.com/ValentineF/NoteBook/blob/master/Picture/servlet.jpg)
 
 ## 参考资料
 
