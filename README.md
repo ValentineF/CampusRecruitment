@@ -10,3 +10,5 @@
 6. [常见安全问题](https://github.com/ValentineF/NoteBook/blob/master/%E6%9E%B6%E6%9E%84/web%E5%AE%89%E5%85%A8%E9%98%B2%E8%8C%83.md)
 7. [Java-Stream](https://github.com/ValentineF/NoteBook/blob/master/Java/Java-Stream.md)
 8. [Servlet](https://github.com/ValentineF/NoteBook/blob/master/Java/Servlet.md)
+9. [Dozer-Java Bean映射工具](https://github.com/ValentineF/NoteBook/blob/master/Java/dozer.md)
+10.[Lambda系列-排序](https://github.com/ValentineF/NoteBook/blob/master/Java/Lambda%E7%B3%BB%E5%88%97-%E6%8E%92%E5%BA%8F.md)
